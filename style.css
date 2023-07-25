@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+     background-image: linear-gradient(120deg, rgba(207, 118, 207, 0.839), rgb(228, 46, 228));
+     min-height: 100vh;
+     font-family: "Kanit", sans-serif;
+      color: black;
+}
+::selection{
+    background-color: rgb(222, 216, 223);
+    color: black;
+}
+header{
+    font-size: 2rem;
+
+}
+
+header , form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+
+}
+form input, form button{
+   
+    border:none;
+  padding: 0.5rem;
+    font-size: 2rem;
+    background-color: white;
+
+}
+
+.todo-button{
+    color: rgba(217, 100, 217, 0.839) ;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+}
+.todo-button:hover{
+    color: white;
+    background-color:  rgba(217, 100, 217, 0.839);
+   
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.list{
+    font-size: 1.2rem;
+    list-style: none;
+    flex: 2 1 40rem;
+    padding: 0.5rem;
+  
+}
+.todo-div{
+ background-color: white;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    transition: all 0.5s ease;
+
+}
+.complete-button, .delete-button{
+
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(224, 18, 18);
+    color: white;
+}
+.complete-button i , .delete-button i{
+    pointer-events: none;
+}
+
+.complete-button{
+    background-color: rgb(6, 190, 19);
+}
+.complete-button:hover, .delete-button:hover{
+    color: black;
+    background-color: rgb(230, 191, 231);
+}
+.completed{
+
+    text-decoration: line-through;
+    opacity: 0.4;
+
+}
+.fall{
+
+    transform: translateY(10rem) rotateZ(20deg);
+ opacity: 0;
+  
+}
+
+  /* select (options) section */
+
+  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance : none;
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 12rem;
+    box-shadow: none;
+  }
+.select{
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+    margin: 0.1rem;
+}
+
+  .select-option{
+ font-size: 1.5rem;
+ margin: 0.5rem;
+ padding: 0.3rem;
+ cursor: pointer;
+
+  }
+
+  .select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+  background-color: rgb(121, 7, 114);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  pointer-events: none;
+  }

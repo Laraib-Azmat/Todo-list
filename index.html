@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Lumanosimo&family=Poppins:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>My Todo List</h2>
+    </header>
+
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+ <div class="select">
+      <select name="select" class="select-option">
+
+
+        <option value="all">All</option>
+        <option value="incomplete">Incomplete</option>
+        <option value="complete">Complete</option>
+
+      </select>
+    </div>
+    </form>
+
+    <div class="container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
